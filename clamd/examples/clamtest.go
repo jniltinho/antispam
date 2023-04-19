@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/baruwa-enterprise/clamd"
+	"github.com/jniltinho/antispam/clamd"
 	flag "github.com/spf13/pflag"
 )
 
