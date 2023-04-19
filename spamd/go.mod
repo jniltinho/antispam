@@ -1,4 +1,4 @@
-module github.com/jniltinho/spamd-client
+module github.com/jniltinho/antispam/spamd
 
 go 1.20
 

@@ -27,9 +27,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jniltinho/spamd-client/pkg/header"
-	"github.com/jniltinho/spamd-client/pkg/request"
-	"github.com/jniltinho/spamd-client/pkg/response"
+	"github.com/jniltinho/antispam/spamd/header"
+	"github.com/jniltinho/antispam/spamd/request"
+	"github.com/jniltinho/antispam/spamd/response"
 )
 
 const (

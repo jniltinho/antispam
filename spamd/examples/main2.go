@@ -20,8 +20,8 @@ import (
 	"path"
 	"strings"
 
-	spamc "github.com/jniltinho/spamd-client/pkg"
-	"github.com/jniltinho/spamd-client/pkg/response"
+	"github.com/jniltinho/antispam/spamd"
+	"github.com/jniltinho/antispam/spamd/response"
 	flag "github.com/spf13/pflag"
 )
 

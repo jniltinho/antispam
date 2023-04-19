@@ -19,7 +19,7 @@ SPAMD client protocol used by SpamAssassin.
 The spamd-client client can be installed as follows
 
 ```console
-$ go get github.com/jniltinho/spamd-client/cmd/spamd-client
+$ go get github.com/jniltinho/antispam/spamd/cmd/spamd-client
 ```
 
 Or by cloning the repo and then running
@@ -34,7 +34,7 @@ $ ./bin/spamd-client
 You can import the library in your code
 
 ```golang
-import "github.com/jniltinho/spamd-client/pkg"
+import "github.com/jniltinho/antispam/spamd"
 ```
 
 ### Testing

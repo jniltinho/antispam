@@ -12,7 +12,7 @@ package request
 import (
 	"testing"
 
-	"github.com/jniltinho/spamd-client/pkg/header"
+	"github.com/jniltinho/antispam/spamd/header"
 )
 
 type MethodTestKey struct {
