@@ -132,7 +132,7 @@ My Workd
 		defer func() {
 			ch <- true
 		}()
-		c, err := spamdclient.NewClient(network, address, cfg.User, cfg.UseCompression)
+		c, err := spamd.NewClient(network, address, cfg.User, cfg.UseCompression)
 		if err != nil {
 			log.Println(err)
 			return
@@ -155,7 +155,7 @@ My Workd
 		d(r)
 	}(m)
 	go func(m []byte) {
-		c, err := spamdclient.NewClient(network, address, cfg.User, cfg.UseCompression)
+		c, err := spamd.NewClient(network, address, cfg.User, cfg.UseCompression)
 		defer func() {
 			ch <- true
 		}()
@@ -182,7 +182,7 @@ My Workd
 		d(r)
 	}(m)
 	go func(m []byte) {
-		c, err := spamdclient.NewClient(network, address, cfg.User, cfg.UseCompression)
+		c, err := spamd.NewClient(network, address, cfg.User, cfg.UseCompression)
 		defer func() {
 			ch <- true
 		}()
@@ -211,7 +211,7 @@ My Workd
 		defer func() {
 			ch <- true
 		}()
-		c, err := spamdclient.NewClient(network, address, cfg.User, cfg.UseCompression)
+		c, err := spamd.NewClient(network, address, cfg.User, cfg.UseCompression)
 		if err != nil {
 			log.Println(err)
 			return
@@ -237,7 +237,7 @@ My Workd
 		defer func() {
 			ch <- true
 		}()
-		c, err := spamdclient.NewClient(network, address, cfg.User, cfg.UseCompression)
+		c, err := spamd.NewClient(network, address, cfg.User, cfg.UseCompression)
 		if err != nil {
 			log.Println(err)
 			return
@@ -263,7 +263,7 @@ My Workd
 		defer func() {
 			ch <- true
 		}()
-		c, err := spamdclient.NewClient(network, address, cfg.User, cfg.UseCompression)
+		c, err := spamd.NewClient(network, address, cfg.User, cfg.UseCompression)
 		if err != nil {
 			log.Println(err)
 			return
@@ -286,7 +286,7 @@ My Workd
 		d(r)
 	}(m)
 	<-ch
-	c, err := spamdclient.NewClient(network, address, cfg.User, cfg.UseCompression)
+	c, err := spamd.NewClient(network, address, cfg.User, cfg.UseCompression)
 	if err != nil {
 		log.Println(err)
 		return
