@@ -7,7 +7,7 @@
 Package spamdclient Golang Spamd SpamAssassin Client
 spamd-client - Golang Spamd SpamAssassin Client
 */
-package spamdclient
+package spamd
 
 import (
 	"bufio"
