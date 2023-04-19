@@ -13,7 +13,7 @@ package main
 import (
     "net"
 
-    "github.com/mileusna/spf"
+    "github.com/jniltinho/antispam/spf"
 )
 
 func main() {
