@@ -20,7 +20,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/jniltinho/antispam/spamd"
+	spamdclient "github.com/jniltinho/antispam/spamd"
 	"github.com/jniltinho/antispam/spamd/response"
 	flag "github.com/spf13/pflag"
 )
