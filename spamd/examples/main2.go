@@ -20,7 +20,7 @@ import (
 	"path"
 	"strings"
 
-	spamdclient "github.com/jniltinho/antispam/spamd"
+	"github.com/jniltinho/antispam/spamd"
 	"github.com/jniltinho/antispam/spamd/response"
 	flag "github.com/spf13/pflag"
 )
@@ -96,7 +96,7 @@ func main() {
 	if cfg.Protocol == "unix" && cfg.Address == "127.0.0.1:783" {
 		cfg.Address = "/var/run/clamav/spamd-socket"
 	}
-	c, err := spamc.NewClient(cfg.Protocol, cfg.Address, cfg.User, cfg.UseCompression)
+	c, err := spamd.NewClient(cfg.Protocol, cfg.Address, cfg.User, cfg.UseCompression)
 	if err != nil {
 		log.Println(err)
 		return
