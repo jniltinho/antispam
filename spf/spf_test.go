@@ -4,7 +4,7 @@ import (
 	"net"
 	"testing"
 
-	"github.com/mileusna/spf"
+	"github.com/jniltinho/antispam/spf"
 )
 
 func TestLookup(t *testing.T) {
