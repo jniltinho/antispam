@@ -193,7 +193,7 @@ func main() {
 	flag.Parse()
 	// msg cleared when in ping action
 	if cfg.Version {
-		fmt.Fprintf(os.Stdout, "SpamAssassin Client version %s SPAMC/%s\n", Version, spamdclient.ClientVersion)
+		fmt.Fprintf(os.Stdout, "SpamAssassin Client version %s SPAMC/%s\n", Version, spamd.ClientVersion)
 		os.Exit(0)
 	}
 
@@ -290,7 +290,7 @@ func main() {
 
 	ctx := context.Background()
 	// Create spamdclient client instance
-	c, err = spamdclient.NewClient(network, address, cfg.User, cfg.UseCompression)
+	c, err = spamd.NewClient(network, address, cfg.User, cfg.UseCompression)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -407,7 +407,7 @@ func parseAddr(a string, p int) (s string) {
 	return
 }
 
-func tell(ctx context.Context, c *spamdclient.Client, m io.Reader) (succeeded bool, code response.StatusCode) {
+func tell(ctx context.Context, c *spamd.Client, m io.Reader) (succeeded bool, code response.StatusCode) {
 	var err error
 	var h string
 	var l request.MsgType
